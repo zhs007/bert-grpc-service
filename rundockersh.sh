@@ -1,7 +1,7 @@
 docker stop bert-grpc-service
 docker rm bert-grpc-service
 
-docker run -it -d \
+docker run --runtime nvidia -it -d \
   --name bert-grpc-service \
   -v $PWD/modal:/bert-grpc-service/modal \
   bert-grpc-service sh
