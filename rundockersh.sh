@@ -1,0 +1,6 @@
+docker run -it -d \
+  --name bert-grpc-service \
+  -v $PWD/modal:/bert-grpc-service \
+  bert-grpc-service sh
+  
+docker exec -it bert-grpc-service sh
