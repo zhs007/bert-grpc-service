@@ -6,4 +6,4 @@ COPY ./sample.sh /bert-grpc-service/bert/sample.sh
 
 WORKDIR /bert-grpc-service
 
-CMD ["sh", "-c", "sample.sh"]
+CMD ["sh", "-c", "/bert-grpc-service/bert/sample.sh"]
